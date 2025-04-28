@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Cal+Sans&family=Special+Gothic&display=swap');
+body{
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    font-family: 'Cal Sans';
+}   
+/* ------NAVBAR------- */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -19,13 +26,6 @@
     padding: auto;
     background-color: none;
 }    
-
-body{
-    padding: 0px;
-    margin: 0px;
-    align-items: center;
-    font-family: 'Cal Sans';
-}
 .navbar a{
     text-decoration: none;
     color: white;
@@ -44,6 +44,7 @@ body{
     border-radius: 20px;
     cursor: pointer;
 }
+/* ------HERO------- */
 .head{
     display: flexbox;
     align-items: center;
@@ -103,6 +104,7 @@ height: 200px;
     border: none; 
     border-radius: 5px;
 }
+/* ------BUTTONS MENU------- */
 .buttons{
     margin-top: 1%;
     display: flex;
@@ -136,5 +138,27 @@ height: 200px;
     background-color: rgba(194, 194, 194, 0.546);
     border-radius: 20px;
     cursor: pointer;
+}
+
+/* --------FEED------------ */
+.feed{
+   display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: fit-content;
+    justify-content: center;
+    gap: 1%;
+    align-items: center;
+    align-content: center;
+    padding-left: 9px;
+}
+.pics{
+   text-align: center;
+}
+.pics img{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
